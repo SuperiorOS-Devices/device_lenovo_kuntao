@@ -336,6 +336,7 @@ PRODUCT_PACKAGES += \
     init.advandec.parts.rc \
     fstab.qcom \
     init.qcom.rc \
+    init.lenovoparts.rc \
     init.mmi.usb.rc \
     init.msm.usb.configfs.rc \
     ueventd.qcom.rc
@@ -409,3 +410,7 @@ PRODUCT_COPY_FILES += \
 # Wi-Fi Display
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+# Lenovo Parts
+PRODUCT_PACKAGES += \
+    LenovoParts 
