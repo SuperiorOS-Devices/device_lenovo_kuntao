@@ -625,4 +625,13 @@
     <!-- Whether or not swipe up gesture is enabled by default -->
     <bool name="config_swipe_up_gesture_default">true</bool>
 
+    <!-- True if the home button has the ability to wake up phone from lockscreen-->
+    <bool name="config_HomeWakeButton">true</bool> 
+
+    <!-- Does the device supports fast charging -->
+    <bool name="config_FastChargingLedSupported">true</bool> 
+
+    <!-- Whether device supports an alt. ambient display -->
+    <bool name="config_alt_ambient_display">true</bool>
+
 </resources>
