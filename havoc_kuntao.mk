@@ -38,3 +38,6 @@ PRODUCT_NAME := havoc_kuntao
 PRODUCT_BRAND := Lenovo
 PRODUCT_MANUFACTURER := Lenovo
 PRODUCT_RELEASE_NAME := kuntao
+
+# export
+HAVOC_BUILD_TYPE := Official
