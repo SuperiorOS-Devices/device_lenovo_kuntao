@@ -259,8 +259,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/Validity_Navigation_Sensor.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/Validity_Navigation_Sensor.idc
 
 # Lights
-PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.kuntao
+PRODUCT_PACKAGES += \ 
+    lights.msm8953 \
+    android.hardware.light@2.0-service \
+    android.hardware.light@2.0-impl
 
 # Media
 PRODUCT_COPY_FILES += \
