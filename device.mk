@@ -339,6 +339,8 @@ PRODUCT_PACKAGES += \
     init.mmi.usb.rc \
     init.msm.usb.configfs.rc \
     ueventd.qcom.rc
+    init.spectrum.rc \
+    init.spectrum.sh \
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
