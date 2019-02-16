@@ -259,7 +259,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/Validity_Navigation_Sensor.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/Validity_Navigation_Sensor.idc
 
 # Lights
-PRODUCT_PACKAGES += \ 
+PRODUCT_PACKAGES += \
     lights.msm8953 \
     android.hardware.light@2.0-service \
     android.hardware.light@2.0-impl
@@ -339,7 +339,7 @@ PRODUCT_PACKAGES += \
     init.lenovoparts.rc \
     init.mmi.usb.rc \
     init.msm.usb.configfs.rc \
-    ueventd.qcom.rc
+    ueventd.qcom.rc \
     init.spectrum.rc \
     init.spectrum.sh \
 
