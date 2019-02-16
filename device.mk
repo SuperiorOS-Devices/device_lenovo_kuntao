@@ -414,3 +414,7 @@ PRODUCT_BOOT_JARS += \
 # Lenovo Parts
 PRODUCT_PACKAGES += \
     LenovoParts 
+
+# Dirac
+PRODUCT_PACKAGES += \
+     LenovoDirac
