@@ -149,6 +149,9 @@ TARGET_KERNEL_CONFIG := kuntao_defconfig
 # Lineage Hardware
 JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|device/lenovo/kuntao/lineagehw|**/*.java
 
+# Lights
+TARGET_PROVIDES_LIBLIGHT := true
+
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
 
