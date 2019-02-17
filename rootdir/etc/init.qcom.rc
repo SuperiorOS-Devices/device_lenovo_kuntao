@@ -29,6 +29,7 @@ import /vendor/etc/init/hw/init.mmi.usb.rc
 import /vendor/etc/init/hw/init.msm.usb.configfs.rc
 import /vendor/etc/init/hw/init.advandec.parts.rc
 import /vendor/etc/init/hw/init.qcom.power.rc
+import /vendor/etc/init/hw/init.lenovoparts.rc
 import init.spectrum.rc
 
 on early-init
@@ -93,6 +94,10 @@ on boot
 
     chown bluetooth net_bt /sys/class/rfkill/rfkill0/device/extldo
     chmod 0660 /sys/class/rfkill/rfkill0/device/extldo
+
+	# Vibrator permissions
+    chown root system /sys/class/timed_output/vibrator/vtg_level
+    chmod 0660 /sys/class/timed_output/vibrator/vtg_level
 
     #Create QMUX deamon socket area
     mkdir /dev/socket/qmux_radio 2770 radio radio
@@ -160,6 +165,12 @@ on boot
 
     # bond0 used by FST Manager
     chown wifi wifi /sys/class/net/bond0/bonding/queue_id
+
+    # Flashlight
+    chown root system /sys/devices/soc/qpnp-flash-led-22/leds/led:torch_0/max_brightness
+    chmod 0660 /sys/devices/soc/qpnp-flash-led-22/leds/led:torch_0/max_brightness
+    chown root system /sys/devices/soc/qpnp-flash-led-22/leds/led:torch_1/max_brightness
+    chmod 0660 /sys/devices/soc/qpnp-flash-led-22/leds/led:torch_1/max_brightness
 
     # Wifi firmware reload path
     chown wifi wifi /sys/module/wlan/parameters/fwpath
@@ -859,7 +870,12 @@ on post-fs
     chown mot_tcmd root /sys/class/power_supply/battery/device/force_chg_fail_clear
     chmod 0664 /sys/class/power_supply/battery/device/force_chg_fail_clear
     chown mot_tcmd root /sys/class/power_supply/ext-charger/usb_otg
-    chmod 0664 /sys/class/power_supply/ext-charger/usb_otg
+    chmod 0664 /sys/class/power_supply/ext-charger/usb_otg on boot
+# access permission for rgb led
+    chmod 0664	/sys/class/leds/rgb/brightness
+    chown system system /sys/class/leds/rgb/brightness
+    chown system system /sys/class/leds/rgb/blink
+    chown system system /sys/class/leds/rgb/led_time
 #lenovo.common.rc import end
 
 # msm specific files that need to be created on /data
