@@ -40,4 +40,4 @@ PRODUCT_MANUFACTURER := Lenovo
 PRODUCT_RELEASE_NAME := kuntao
 
 # export
-HAVOC_BUILD_TYPE := Mod_Edition
+HAVOC_BUILD_TYPE := Mod_Edition🔥
