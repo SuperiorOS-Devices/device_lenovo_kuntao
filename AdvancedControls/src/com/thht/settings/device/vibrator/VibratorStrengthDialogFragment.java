@@ -20,7 +20,7 @@ import com.thht.settings.device.R;
 import com.thht.settings.device.helpers.Utils;
 
 public class VibratorStrengthDialogFragment extends DialogFragment implements SeekBar.OnSeekBarChangeListener {
-    public static final String FILE_LEVEL_VIB_STRENGTH = "/sys/devices/virtual/timed_output/vibrator/vmax_mv";
+    public static final String FILE_LEVEL_VIB_STRENGTH = "/sys/class/virtual/timed_output/vibrator/vtg_level";
     // the different layout elements
     private SeekBar mSeekBar;
     private TextView mValueText;
@@ -189,7 +189,7 @@ public class VibratorStrengthDialogFragment extends DialogFragment implements Se
         setValue(String.valueOf(value));
         SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(getActivity()).edit();
         editor.putString(mPreferenceKey, String.valueOf(value));
-        editor.commit();
+        editor.apply();
     }
 
     // click action : plus one
