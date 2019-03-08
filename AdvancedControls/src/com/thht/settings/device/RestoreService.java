@@ -9,7 +9,6 @@ import com.thht.settings.device.kcal.KcalExtrasDialogFragment;
 import com.thht.settings.device.kcal.KcalPresets;
 import com.thht.settings.device.kcal.KcalRGBDialogFragment;
 import com.thht.settings.device.torch.TorchBrightnessDialogFragment;
-import com.thht.settings.device.vibrator.VibratorStrengthDialogFragment;
 
 public class RestoreService extends IntentService {
 
@@ -22,10 +21,6 @@ public class RestoreService extends IntentService {
     @Override
     protected void onHandleIntent(Intent intent) {
 
-        // restore vibrator strength
-        VibratorStrengthDialogFragment.restore(this,
-                StaticMembers.KEY_VIB_STRENGTH,
-                String.valueOf(StaticMembers.DEFAULT_VALUE_VIB_STRENGTH));
         // restore white torch brightness
         TorchBrightnessDialogFragment.restore(StaticMembers.FILE_LEVEL_TORCH_WHITE,
                 this,
