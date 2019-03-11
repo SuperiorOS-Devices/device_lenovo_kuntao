@@ -18,6 +18,7 @@ import com.thht.settings.device.kcal.KcalExtrasDialogFragment;
 import com.thht.settings.device.kcal.KcalPresets;
 import com.thht.settings.device.kcal.KcalRGBDialogFragment;
 import com.thht.settings.device.torch.TorchBrightnessDialogFragment;
+import com.thht.settings.device.vibrator.VibratorStrengthDialogFragment;
 
 import android.util.Log;
 
@@ -114,6 +115,9 @@ public class CustomPreferenceFragment extends PreferenceFragment implements
             TorchBrightnessDialogFragment.newInstance(StaticMembers.FILE_LEVEL_TORCH_WHITE,
                     StaticMembers.KEY_WHITE_TORCH_BRIGHTNESS).
                     show(getFragmentManager(), "WhiteTorch");
+        } else if (preference == mVibratorPref) {
+            VibratorStrengthDialogFragment.newInstance(StaticMembers.KEY_VIB_STRENGTH).
+                    show(getFragmentManager(), "VibratorStrength");
         } else if (preference == mKCALRPref) {
             KcalRGBDialogFragment.newInstance(0, StaticMembers.KEY_KCAL_RGB_RED).
                     show(getFragmentManager(), "KcalRed");
@@ -209,6 +213,9 @@ public class CustomPreferenceFragment extends PreferenceFragment implements
         // torch
         mYTorchPref.setEnabled(TorchBrightnessDialogFragment.isSupported(StaticMembers.FILE_LEVEL_TORCH_YELLOW));
         mWTorchPref.setEnabled(TorchBrightnessDialogFragment.isSupported(StaticMembers.FILE_LEVEL_TORCH_WHITE));
+
+        // vibrator
+        mVibratorPref.setEnabled(VibratorStrengthDialogFragment.isSupported());
 
         // kcal screen
         boolean isKcalSupported = KcalRGBDialogFragment.isSupported();
