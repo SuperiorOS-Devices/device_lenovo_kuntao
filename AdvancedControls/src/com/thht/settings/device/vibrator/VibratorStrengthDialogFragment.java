@@ -20,7 +20,7 @@ import com.thht.settings.device.R;
 import com.thht.settings.device.helpers.Utils;
 
 public class VibratorStrengthDialogFragment extends DialogFragment implements SeekBar.OnSeekBarChangeListener {
-    public static final String FILE_LEVEL_VIB_STRENGTH = "/sys/class/virtual/timed_output/vibrator/vtg_level";
+    public static final String FILE_LEVEL_VIB_STRENGTH = "/sys/class/timed_output/vibrator/vtg_level";
     // the different layout elements
     private SeekBar mSeekBar;
     private TextView mValueText;
