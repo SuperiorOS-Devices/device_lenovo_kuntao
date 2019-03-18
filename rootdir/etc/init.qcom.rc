@@ -1063,7 +1063,6 @@ on property:vold.decrypt=trigger_restart_framework
     stop vendor.camera-provider-2-4
     start vendor.camera-provider-2-4
     start qcom-c_main-sh
-    start wcnss-service
     start vfmService
 
 on property:persist.env.fastdorm.enabled=true
@@ -1212,7 +1211,7 @@ service time_daemon /vendor/bin/time_daemon
    group root
 
 service wcnss-service /vendor/bin/wcnss_service
-    class main
+    class late_start
     user system
     group system wifi radio
     oneshot
