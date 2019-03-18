@@ -79,4 +79,8 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="native" optional="false">
+        <name>netutils-wrapper</name>
+        <version>1.0</version>
+    </hal>
 </compatibility-matrix>
