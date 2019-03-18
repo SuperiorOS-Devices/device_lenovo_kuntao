@@ -404,7 +404,7 @@ PRODUCT_COPY_FILES += \
 # WiFi HAL
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
-    libwifi-hal-qcom \
+    wcnss_service \
     libwpa_client \
     hostapd \
     wpa_supplicant \
