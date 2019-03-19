@@ -65,6 +65,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.disable_skip_validate=1
     vendor.display.disable_rotator_downscale=1
 
+# Fingerprint
+PRODUCT_PROPERTY_OVERRIDES += \
+    log.tag.synaFpHal=W \
+    log.tag.SynapticsLIB=W \
+    log.tag.synaTransport=W
+
 # Miracast
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.enable_hwc_vds=1 \
