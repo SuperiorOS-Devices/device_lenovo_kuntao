@@ -34,6 +34,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     camera.hal1.packagelist=com.skype.raider,com.android.facelock,com.google.android.talk \
+    vendor.camera.hal1.packagelist=com.whatsapp,com.android.facelock \
+    camera.hal1.packagelist=com.whatsapp,com.android.facelock \
     persist.vendor.camera.display.umax=1920x1080 \
     persist.vendor.camera.display.lmax=1280x720 \
     vidc.enc.dcvs.extra-buff-count=2 \
