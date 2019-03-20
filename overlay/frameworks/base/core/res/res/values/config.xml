@@ -450,6 +450,9 @@
          radio is unable to find any MCC information to infer wifi country code from -->
     <bool translatable="false" name="config_wifi_revert_country_code_on_cellular_loss">true</bool>
 
+	<!-- Wifi driver supports batched scan -->
+	<bool translatable="false" name="config_wifi_batched_scan_supported">true</bool>
+
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
     <bool name="config_intrusiveNotificationLed">true</bool>
 
