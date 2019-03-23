@@ -172,6 +172,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.0-service.kuntao
 
+PRODUCT_PACKAGES += \
+    DeviceSettings
+
 # FM
 PRODUCT_PACKAGES += \
     FM2 \
