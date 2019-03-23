@@ -12,9 +12,19 @@
 /data/cam_socket[12]                                    			u:object_r:camera_socket:s0
 
 # Fingerprint
-/dev/vfsspi									u:object_r:vfs_device:s0
-/dev/validity(/.*)?							        u:object_r:fingerprintd_data_file:s0
-/data/validity(/.*)?								u:object_r:fingerprintd_data_file:s0
+/vendor/bin/vfmService                                                     u:object_r:vfmService_exec:s0
+/dev/vfsspi                                                                u:object_r:vfsspi_device:s0
+/dev/validity(/.*)?                                                        u:object_r:vfsspi_device:s0
+/data/validity(/.*)?                                                       u:object_r:vfsspi_data_file:s0
+
+# Keylayout
+/vendor/usr/keylayout/gpio-keys\.kl                                        u:object_r:vendor_keylayout_file:s0
+/vendor/usr/keylayout/ft5x06_ts\.kl                                         u:object_r:vendor_keylayout_file:s0
+/vendor/usr/keylayout/synaptics_rmi4_i2c\.kl                                u:object_r:vendor_keylayout_file:s0
+/vendor/usr/keylayout/synaptics_dsxv26\.kl                       u:object_r:vendor_keylayout_file:s0
+/vendor/usr/keylayout/synaptics_dsx\.kl                       u:object_r:vendor_keylayout_file:s0
+/vendor/usr/keylayout/synaptics_dsx_i2c\.kl                                u:object_r:vendor_keylayout_file:s0
+/vendor/usr/keylayout/Validity_Navigation_Sensor\.kl                       u:object_r:vendor_keylayout_file:s0
 
 # Partitions
 /dev/block/bootdevice/by-name/cache                    				u:object_r:cache_block_device:s0
@@ -30,3 +40,8 @@
 /sys/bus/iio/devices                                                       u:object_r:sysfs_sensors:s0
 /sys/devices/iio:device[0-9](/.*)?                                         u:object_r:sysfs_sensors:s0
 /sys/devices/platform/elan_alsps(/.*)?                                     u:object_r:sysfs_sensors:s0
+
+# Touchscreen
+/sys/board_properties/tpd_glove_status                                     u:object_r:sysfs_touchpanel:s0
+/sys/board_properties/tpd_suspend_status                                   u:object_r:sysfs_touchpanel:s0
+/vendor/bin/hw/vendor\.lineage\.touch@1\.0-service\.kuntao                 u:object_r:hal_lineage_touch_default_exec:s0
