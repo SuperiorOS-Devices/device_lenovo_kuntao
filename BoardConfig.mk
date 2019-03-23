@@ -198,6 +198,7 @@ USE_OPENGL_RENDERER := true
 
 # RIL
 TARGET_RIL_VARIANT := caf
+TARGET_USES_OLD_MNC_FORMAT := true
 
 # SELinux
 #BOARD_SEPOLICY_DIRS += device/lenovo/kuntao/sepolicy
