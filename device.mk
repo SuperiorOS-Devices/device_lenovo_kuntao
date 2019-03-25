@@ -456,6 +456,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	ThermalController
 
-# MotoActions
+# AdvancedControls
 PRODUCT_PACKAGES += \
-    MotoActions
+     AdvancedControls
