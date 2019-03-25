@@ -455,3 +455,7 @@ PRODUCT_PACKAGES += \
 # ThermalController app
 PRODUCT_PACKAGES += \
 	ThermalController
+
+# MotoActions
+PRODUCT_PACKAGES += \
+    MotoActions
