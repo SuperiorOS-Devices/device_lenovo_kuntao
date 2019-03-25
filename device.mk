@@ -459,3 +459,7 @@ PRODUCT_PACKAGES += \
 # AdvancedControls
 PRODUCT_PACKAGES += \
      AdvancedControls
+
+# LePerf
+PRODUCT_PACKAGES += \
+    LePref
