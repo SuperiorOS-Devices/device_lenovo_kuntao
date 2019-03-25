@@ -223,6 +223,10 @@ on boot
     chmod 0664 /sys/board_properties/tpd_suspend_status
     chown system system /sys/board_properties/tpd_suspend_status
 
+     # Glove mode
+    chmod 0664 /sys/board_properties/tpd_glove_status
+    chown system system /sys/board_properties/tpd_glove_status
+
     # Fingerprint
     chmod 0660 /dev/vfsspi
     chown system system /dev/vfsspi

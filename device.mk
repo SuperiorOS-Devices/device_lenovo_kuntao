@@ -348,10 +348,6 @@ PRODUCT_PACKAGES += \
     init.spectrum.rc \
     init.spectrum.sh \
 
-# Touch features
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.kuntao
-
 # LiveDisplay
 PRODUCT_PACKAGES += \
     vendor.lineage.livedisplay@2.0-service-sdm
