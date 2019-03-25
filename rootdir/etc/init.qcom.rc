@@ -1373,3 +1373,24 @@ on property:sys.dbg.coresight.enable=1
 
 on property:sys.dbg.coresight.enable=0
     write /persist/coresight/enable 0
+
+on property:init.prop.toggle.iaf=1
+    restart vendor.camera-provider-2-4
+
+on property:persist.sys.le_fast_chrg_enable=1
+    write /sys/class/power_supply/battery/le_quick_charge_mode 0 
+
+on property:persist.sys.le_fast_chrg_enable=0
+    write /sys/class/power_supply/battery/le_quick_charge_mode 1 
+
+on property:sys.settings.powerlimit=1
+    write /sys/class/power_supply/battery/charging_enabled 0 
+
+on property:sys.settings.powerlimit=0
+    write /sys/class/power_supply/battery/charging_enabled 1 
+
+on property:sys.usb.config.powerlimit=1
+    write /sys/class/power_supply/battery/system_temp_level 3 
+
+on property:sys.usb.config.powerlimit=0
+    write /sys/class/power_supply/battery/system_temp_level 0
