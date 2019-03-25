@@ -455,3 +455,7 @@ PRODUCT_COPY_FILES += \
 # LineageActions
 PRODUCT_PACKAGES += \
      LineageActions
+
+# ThermalController app
+PRODUCT_PACKAGES += \
+	ThermalController
