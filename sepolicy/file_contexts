@@ -7,6 +7,7 @@
 /sys/devices/soc/78b8000.i2c/i2c-4/4-0057/power_supply/ext-charger(/.*)?        u:object_r:sysfs_smart_charger:s0
 /sys/devices/soc/7af5000.i2c/i2c-4/4-001d/power_supply/ext-charger-dual(/.*)?	u:object_r:sysfs_smart_charger:s0
 /vendor/bin/smart_charger                                                  u:object_r:smart_charger_exec:s0
+/sys/devices/virtual/hwmon/hwmon5/temp1_input                              u:object_r:sysfs_temperature:s0
 
 # Camera
 /data/cam_socket[12]                                    			u:object_r:camera_socket:s0
