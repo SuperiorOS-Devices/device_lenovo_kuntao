@@ -56,7 +56,7 @@
             android:name=".ButtonSettingsActivity"
             android:label="@string/button_panel_title">
             <intent-filter>
-                <action android:name="org.lineageos.settings.device.ADDITIONAL_BUTTONS_SETTINGS" />
+                <action android:name="org.lineageos.settings.category.ia.system" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
