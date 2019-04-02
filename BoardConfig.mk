@@ -224,6 +224,10 @@ DEVICE_FRAMEWORK_MANIFEST_FILE := device/lenovo/kuntao/framework_manifest.xml
 # Security patch level
 VENDOR_SECURITY_PATCH := 2017-11-01
 
+# Treble
+BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
+PRODUCT_FULL_TREBLE_OVERRIDE := true
+
 # WiFi
 BOARD_HAS_QCOM_WLAN := true
 BOARD_HOSTAPD_DRIVER := NL80211
@@ -237,3 +241,5 @@ WIFI_DRIVER_FW_PATH_AP := "ap"
 WIFI_DRIVER_FW_PATH_STA := "sta"
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
+# Inherit from the proprietary version
+include vendor/lenovo/kuntao/BoardConfigVendor.mk

@@ -463,3 +463,6 @@ PRODUCT_PACKAGES += \
 # LePerf
 PRODUCT_PACKAGES += \
     LePref
+
+# Call the proprietary setup
+$(call inherit-product, vendor/lenovo/kuntao/kuntao-vendor.mk)
