@@ -27,7 +27,7 @@
         android:minSdkVersion="27" />
 
     <application
-        android:icon="@drawable/ic_lenovo"
+        android:icon="@drawable/ic_settings_buttons"
         android:label="@string/device_settings_app_name"
         android:theme="@style/Theme.Main"
         android:defaultToDeviceProtectedStorage="true"
@@ -56,7 +56,7 @@
                 android:value="com.android.settings.category.ia.system" />
             <meta-data
                 android:name="com.android.settings.icon"
-                android:resource="@drawable/ic_buttons" />
+                android:resource="@drawable/ic_settings_buttons" />
             <meta-data android:name="com.android.settings.summary"
                 android:resource="@string/button_panel_kek_summary"/>
         </activity>
