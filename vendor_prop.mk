@@ -181,4 +181,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.havoc.maintainer=Advaith Bhat
+    ro.havoc.maintainer=redWolfX
