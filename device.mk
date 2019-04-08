@@ -454,10 +454,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	ThermalController
 
-# AdvancedControls
-PRODUCT_PACKAGES += \
-     AdvancedControls
-
 # LePerf
 PRODUCT_PACKAGES += \
     LePref
