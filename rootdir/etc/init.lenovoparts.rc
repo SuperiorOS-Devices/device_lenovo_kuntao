@@ -63,3 +63,13 @@ on boot
     # Permissions for Touch Gesture Mode
     chown system system /sys/kernel/touchpanel/gesture_mode
     chmod 0664 /sys/kernel/touchpanel/gesture_mode
+
+    # Charging limiter
+    chown system system /sys/kernel/charger_limiter/charging_limit
+    chmod 0660 /sys/kernel/charger_limiter/charging_limit
+
+    # Flashlight
+    chown root system /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_0/max_brightness
+    chmod 0660 /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_0/max_brightness
+    chown root system /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_1/max_brightness
+    chmod 0660 /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_1/max_brightness
