@@ -26,6 +26,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.voice.path.for.pcm.voip=true \
     ro.af.client_heap_size_kbyte=7168 \
     persist.vendor.audio.hw.binder.size_kbyte=1024
+    vendor.audio.use.dts_eagle=true 
+    use.dts_eagle=true
+    hpx_send_params=1
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
