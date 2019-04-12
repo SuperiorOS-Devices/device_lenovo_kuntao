@@ -338,7 +338,6 @@ PRODUCT_PACKAGES += \
     move_widevine_data.sh \
     init.qti.fm.sh \
     init.qcom.power.rc \
-    init.advandec.parts.rc \
     fstab.qcom \
     init.qcom.rc \
     init.lenovoparts.rc \
@@ -458,5 +457,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LePref
 
+# LenovoSax
+PRODUCT_PACKAGES += \
+LenovoSax
+
 # Call the proprietary setup
 $(call inherit-product, vendor/lenovo/kuntao/kuntao-vendor.mk)
+
