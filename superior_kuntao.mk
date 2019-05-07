@@ -16,8 +16,8 @@
 # Inherit device configuration
 $(call inherit-product, device/lenovo/kuntao/full_kuntao.mk)
 
-# Inherit some common Havoc stuff.
-$(call inherit-product, vendor/havoc/config/common.mk)
+# Inherit some common Superior stuff.
+$(call inherit-product, vendor/superior/config/common.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
@@ -34,10 +34,10 @@ BUILD_FINGERPRINT := Lenovo/kuntao_row/P2a42:7.0/NRD90N/P2a42_S251_171107_ROW:us
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := kuntao
-PRODUCT_NAME := havoc_kuntao
+PRODUCT_NAME := superior_kuntao
 PRODUCT_BRAND := Lenovo
 PRODUCT_MANUFACTURER := LENOVO
 PRODUCT_RELEASE_NAME := kuntao
 
 # export
-HAVOC_BUILD_TYPE := redWolfX_Edition🔥
+SUPERIOR_BUILD_TYPE := redWolfX_Edition🔥
