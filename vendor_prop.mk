@@ -184,4 +184,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.havoc.maintainer=redWolfX
+    ro.superior.maintainer=redWolfX
