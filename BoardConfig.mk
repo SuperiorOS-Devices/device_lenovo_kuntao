@@ -213,6 +213,7 @@ TARGET_USES_OLD_MNC_FORMAT := true
 #BOARD_SEPOLICY_DIRS += device/lenovo/kuntao/sepolicy
 #include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_VERS := 28.0
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # GPS
 USE_DEVICE_SPECIFIC_GPS := true
