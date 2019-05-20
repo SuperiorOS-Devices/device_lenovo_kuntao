@@ -73,3 +73,10 @@ on boot
     chmod 0660 /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_0/max_brightness
     chown root system /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_1/max_brightness
     chmod 0660 /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_1/max_brightness
+
+on property:sys.boot_completed=1
+    # Sound control
+    chown system system /sys/kernel/sound_control/headphone_gain
+    chown system system /sys/kernel/sound_control/speaker_gain
+    chown system system /sys/kernel/sound_control/mic_gain
+    restorecon_recursive /sys/kernel/sound_control
