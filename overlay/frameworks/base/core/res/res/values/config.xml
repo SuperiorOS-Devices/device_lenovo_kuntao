@@ -287,7 +287,7 @@
     <!-- Vibrator pattern for feedback about hitting a scroll barrier -->
     <integer-array name="config_scrollBarrierVibePattern">
         <item>15</item>
-        <itrm>15</item>
+        <item>15</item>
         <item>30</item>
         <item>30</item>
         <item>20</item>
